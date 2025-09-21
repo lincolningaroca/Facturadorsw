@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/iconos/abrirBandejaSFS.png</file>
+        <file>img/iconos/administrar.png</file>
+        <file>img/iconos/ayuda.png</file>
+        <file>img/iconos/cerrar_sesion.png</file>
+        <file>img/iconos/clientes.png</file>
+        <file>img/iconos/comprobantes.png</file>
+        <file>img/iconos/conductores.png</file>
+        <file>img/iconos/configurar.png</file>
+        <file>img/iconos/ejecutarSFS.png</file>
+        <file>img/iconos/excel.png</file>
+        <file>img/iconos/imprimir.png</file>
+        <file>img/iconos/inicio.png</file>
+        <file>img/iconos/lupa.png</file>
+        <file>img/iconos/productos.png</file>
+        <file>img/iconos/proveedores.png</file>
+        <file>img/iconos/salir.png</file>
+        <file>img/iconos/servicios.png</file>
+        <file>img/iconos/usuarios.png</file>
+        <file>img/iconos/vehiculos.png</file>
+        <file>img/iconos/volver.png</file>
+        <file>img/cargando.gif</file>
+        <file>img/cpe.png</file>
+        <file>img/facturador.png</file>
+        <file>img/fondo.jpg</file>
+        <file>img/icono.png</file>
+        <file>img/logo con texto.png</file>
+        <file>img/logo.png</file>
+        <file>img/nike.jpg</file>
+        <file>img/smartcuytec.png</file>
+        <file>img/vertical.png</file>
+        <file>img/yape.jpeg</file>
+        <file>img/iconos/left_arrow.png</file>
+        <file>img/iconos/right_qrrow.png</file>
+    </qresource>
+</RCC>

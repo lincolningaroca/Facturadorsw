@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FacturadorMW</class>
+ <widget class="QMainWindow" name="FacturadorMW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>969</width>
+    <height>546</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FacturadorMW</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="iconLbl">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="messsageLbl">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Buscar:  </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="buscarTxt">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QStackedWidget" name="principalStc">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="comprobantePage">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QTabWidget" name="comprobanteTab">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="facturaTab">
+             <attribute name="title">
+              <string>Facturas</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTableWidget" name="facturaTbw">
+                <column>
+                 <property name="text">
+                  <string>Factura</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Nombre/Razón social</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Moneda</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Referencia</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Importe T.</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Estado</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="boletaTab">
+             <attribute name="title">
+              <string>Boletas</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTableWidget" name="boletaTbw">
+                <column>
+                 <property name="text">
+                  <string>Boleta</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Nombre/Razón social</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Moneda</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Referencia</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Importe T.</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Estado</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="ncreditoTab">
+             <attribute name="title">
+              <string>N. Crédito</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTableWidget" name="n_creditoTbw">
+                <column>
+                 <property name="text">
+                  <string>Nota crédito</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Nombre/Razón social</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Comprobante</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Motivo</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Referencia</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Estado</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="debitoTab">
+             <attribute name="title">
+              <string>N. Débito</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTableWidget" name="n_debitoTbw">
+                <column>
+                 <property name="text">
+                  <string>Nota débito</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Nombre/Razón social</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Comprobante</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Motivo</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Referencia</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Estado</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="remisionTab">
+             <attribute name="title">
+              <string>G. Remisión</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTableWidget" name="remisionTbw">
+                <column>
+                 <property name="text">
+                  <string>G. Remisión</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Destinatario</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Motivo</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Referencia</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Estado</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="bajasTab">
+             <attribute name="title">
+              <string>Bajas</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTableWidget" name="bajasTbw">
+                <column>
+                 <property name="text">
+                  <string>Tipo comprobante</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Comprobante</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Baja</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Motivo</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="clientesPage">
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="clientesTbw">
+            <column>
+             <property name="text">
+              <string>Tipo doc.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Nro. doc.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Nombre/Razón social</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dirección</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="productosPage">
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="productosTbw">
+            <column>
+             <property name="text">
+              <string>Código</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Descripción</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Tipo unidad</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Precio 1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Precio 2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Estado</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="serviciosPage">
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="serviciosTbw">
+            <column>
+             <property name="text">
+              <string>Código</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Descripción</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Tipo unidad</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Precio 1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Precio 2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Estado</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="conductoresPage">
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="conductoresTbw">
+            <column>
+             <property name="text">
+              <string>Tipo doc.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Nro. Doc.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Nombres</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Licencia</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Estado</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="vehiculosPage">
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="vehiculosTbw">
+            <column>
+             <property name="text">
+              <string>Marca</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Modelo</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Placa</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Estado</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="proveedorPage">
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="proveedorTbw">
+            <column>
+             <property name="text">
+              <string>Tipo doc.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Nro. Doc</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Nombre/Razón social</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dirección</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="rightPanel">
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="leftMargin">
+          <number>2</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="nuevoPb">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Nuevo</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="editarPb">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Editar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="imprimePb">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Imprimir</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="eliminaPb">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Eliminar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="Line" name="line_3">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="crearPb">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Crear TXT</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="consultaPb">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Consulta estado CPE</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="exportaPb">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Exportar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>969</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="archivoMnu">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="archivoAct"/>
+    <addaction name="ejecutaAct"/>
+    <addaction name="bandejaAct"/>
+    <addaction name="configuraAct"/>
+    <addaction name="cerrarAct"/>
+    <addaction name="salirAct"/>
+   </widget>
+   <widget class="QMenu" name="administraMnu">
+    <property name="title">
+     <string>Administrar</string>
+    </property>
+    <addaction name="comprobanteAct"/>
+    <addaction name="clienteAct"/>
+    <addaction name="productoAct"/>
+    <addaction name="servicioAct"/>
+    <addaction name="conductorAct"/>
+    <addaction name="vehiculoAct"/>
+    <addaction name="proveedorAct"/>
+    <addaction name="separator"/>
+    <addaction name="UsuarioAct"/>
+   </widget>
+   <widget class="QMenu" name="menuVer">
+    <property name="title">
+     <string>Ver</string>
+    </property>
+    <addaction name="showAct"/>
+   </widget>
+   <addaction name="archivoMnu"/>
+   <addaction name="administraMnu"/>
+   <addaction name="menuVer"/>
+  </widget>
+  <widget class="QDockWidget" name="leftOptionsDw">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="comprobantePb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Comprobantes</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/comprobantes.png</normaloff>:/img/iconos/comprobantes.png</iconset>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clientesPb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LayoutDirection::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>Clientes</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/clientes.png</normaloff>:/img/iconos/clientes.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="productosPb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Productos</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/productos.png</normaloff>:/img/iconos/productos.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="serviciosPb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Servicios</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/servicios.png</normaloff>:/img/iconos/servicios.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="conductoresPb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Conductores</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/conductores.png</normaloff>:/img/iconos/conductores.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="vehiculosPb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Vehículos</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/vehiculos.png</normaloff>:/img/iconos/vehiculos.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="proveedorPb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Proveedores</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/proveedores.png</normaloff>:/img/iconos/proveedores.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ejecutaPb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Ejecutar SFS</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/ejecutarSFS.png</normaloff>:/img/iconos/ejecutarSFS.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bandejaPb">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Bandeja SFS</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/img/iconos/abrirBandejaSFS.png</normaloff>:/img/iconos/abrirBandejaSFS.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="archivoAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/inicio.png</normaloff>:/img/iconos/inicio.png</iconset>
+   </property>
+   <property name="text">
+    <string>Inicio</string>
+   </property>
+  </action>
+  <action name="ejecutaAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/ejecutarSFS.png</normaloff>:/img/iconos/ejecutarSFS.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ejecutar SFS</string>
+   </property>
+  </action>
+  <action name="bandejaAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/abrirBandejaSFS.png</normaloff>:/img/iconos/abrirBandejaSFS.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bandeja SFS</string>
+   </property>
+  </action>
+  <action name="configuraAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/configurar.png</normaloff>:/img/iconos/configurar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configurar</string>
+   </property>
+  </action>
+  <action name="cerrarAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/cerrar_sesion.png</normaloff>:/img/iconos/cerrar_sesion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cerrar sesión</string>
+   </property>
+  </action>
+  <action name="salirAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/salir.png</normaloff>:/img/iconos/salir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="comprobanteAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/comprobantes.png</normaloff>:/img/iconos/comprobantes.png</iconset>
+   </property>
+   <property name="text">
+    <string>Comprobantes</string>
+   </property>
+  </action>
+  <action name="clienteAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/clientes.png</normaloff>:/img/iconos/clientes.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clientes</string>
+   </property>
+  </action>
+  <action name="productoAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/productos.png</normaloff>:/img/iconos/productos.png</iconset>
+   </property>
+   <property name="text">
+    <string>Productos</string>
+   </property>
+  </action>
+  <action name="servicioAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/servicios.png</normaloff>:/img/iconos/servicios.png</iconset>
+   </property>
+   <property name="text">
+    <string>Servicios</string>
+   </property>
+  </action>
+  <action name="conductorAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/conductores.png</normaloff>:/img/iconos/conductores.png</iconset>
+   </property>
+   <property name="text">
+    <string>Conductores</string>
+   </property>
+  </action>
+  <action name="vehiculoAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/vehiculos.png</normaloff>:/img/iconos/vehiculos.png</iconset>
+   </property>
+   <property name="text">
+    <string>Vehículos</string>
+   </property>
+  </action>
+  <action name="proveedorAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/proveedores.png</normaloff>:/img/iconos/proveedores.png</iconset>
+   </property>
+   <property name="text">
+    <string>Proveedores</string>
+   </property>
+  </action>
+  <action name="UsuarioAct">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/img/iconos/usuarios.png</normaloff>:/img/iconos/usuarios.png</iconset>
+   </property>
+   <property name="text">
+    <string>Usuarios</string>
+   </property>
+  </action>
+  <action name="showAct">
+   <property name="text">
+    <string>Mostrar / ocultar panel de opciones</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="rsc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
