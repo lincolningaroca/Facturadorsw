@@ -22,3 +22,4 @@ rad.json
 TestResults.xml
 #build folders
 build*/
+CMakeLists.txt.user
